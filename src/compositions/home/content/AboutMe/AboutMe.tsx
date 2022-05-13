@@ -8,17 +8,16 @@ import useWindowSize from 'src/hooks/useWindowSize';
 import { Dimmed } from 'src/shared-styles/Images.styles';
 
 export const AboutMe = () => {
-	//const { width } = useWindowSize();
+	const { width } = useWindowSize();
 
 	return (
 		<>
-{/* 			{width && width >= portfolioTheme.breakpoints.values.md && (
+			{width && width >= portfolioTheme.breakpoints.values.md && (
 				<SectionTitle id='about'>
 					<Typography variant='h4'>About Me </Typography>
 				</SectionTitle>
-			)} */}
-
-{/* 			<Dimmed id='about-me'>
+			)}
+			<Dimmed id='about-me'>
 				<AboutMeContainer>
 					<div className={AboutMeClassNames.ImageContainer}>
 						<Image src={aboutMe} alt='aboutMe' className={AboutMeClassNames.Opacity}></Image>
@@ -49,7 +48,7 @@ export const AboutMe = () => {
 						</Typography>
 					</div>
 				</AboutMeContainer>
-			</Dimmed> */}
+			</Dimmed>
 		</>
 	);
 };
