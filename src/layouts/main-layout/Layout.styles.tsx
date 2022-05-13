@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const LayoutContainer = styled.div`
-	margin: 0;
+/* 	margin: 0;
 	padding: 0;
 	min-height: 100vh;
 	width: 100vw;
@@ -12,7 +12,7 @@ export const LayoutContainer = styled.div`
 		min-height: 100vh;
 		overflow: hidden;
 		overflow-y: 'scroll';
-	}
+	} */
 `;
 
 export enum LayoutClassNames {}

@@ -1,3 +1,4 @@
+import { css, Global } from '@emotion/react';
 import styled from '@emotion/styled';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
@@ -8,7 +9,6 @@ import { portfolioDarkTheme } from 'src/theme/ThemeProvider';
 
 export const StyledApp = styled.div`
 	color: ${props => props.theme.palette.text.primary};
-	font-family: ${props => props.theme.typography.fontFamily};
 `;
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -30,6 +30,13 @@ function MyApp({ Component, pageProps }: AppProps) {
 			gtag('config', 'G-PFGS0C39D7');		
 		`}
 			</Script>
+			<Global
+				styles={css`
+					* {
+						font-family: 'Roboto';
+					}
+				`}
+			/>
 
 			<PortfolioTheme theme={portfolioDarkTheme}>
 				<StyledApp>

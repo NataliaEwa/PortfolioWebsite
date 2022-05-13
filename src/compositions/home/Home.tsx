@@ -19,7 +19,7 @@ I am Frontend Developer
 I'm a software engineer passionate about building elegant and modern websites.`}
 				/>
 			</Head>
-
+			
 			<HomeContainer>
 				<Introduction />
 				<AboutMe />

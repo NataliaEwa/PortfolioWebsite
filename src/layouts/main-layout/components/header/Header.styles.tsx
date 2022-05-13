@@ -36,7 +36,7 @@ export const HeaderContainer = styled.header<HeaderProps>`
 			${props => (props.scrollPosition > 0 ? props.theme.palette.primary.dark : props.theme.palette.primary.main)}
 		);
 		height: 1px;
-		min-width: 100vw;
+		min-width: 100%;
 		top: 5rem;
 		position: absolute;
 

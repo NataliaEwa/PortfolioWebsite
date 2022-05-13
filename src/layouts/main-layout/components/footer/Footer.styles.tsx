@@ -4,14 +4,12 @@ import { mobileNavigationHeight } from '../navigation/mobile/MobileNavigation.st
 export const footerDesktopHeight = '2.5rem';
 
 export const FooterContainer = styled.footer`
-	min-width: 100vw;
 	height: ${footerDesktopHeight};
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
-	z-index: 990;
 	justify-content: space-between;
 
 	background-color: transparent;
@@ -23,7 +21,6 @@ export const FooterContainer = styled.footer`
 
 	.container {
 		height: ${footerDesktopHeight};
-		width: 100%;
 		display: flex;
 		align-items: center;
 		flex-direction: column;
@@ -44,8 +41,8 @@ export const FooterContainer = styled.footer`
 			${props => props.theme.palette.primary.light},
 			${props => props.theme.palette.primary.dark}
 		);
+		width: 100%;
 		height: 1px;
-		min-width: 100vw;
 		position: absolute;
 		opacity: 0.2;
 

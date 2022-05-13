@@ -33,9 +33,7 @@ export default function Layout({ children }: LayoutProps) {
 	return (
 		<LayoutContainer>
 			<Header scrollPosition={scrollPosition} />
-
 			{width && width >= portfolioTheme.breakpoints.values.md && <IconsPanel />}
-
 			<main>
 				<Sky />
 
