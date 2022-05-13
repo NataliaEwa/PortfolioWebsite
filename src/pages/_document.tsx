@@ -5,6 +5,27 @@ import styled from '@emotion/styled';
 
 export const StyledBody = styled.body`
 	margin: 0;
+
+	/* width */
+	::-webkit-scrollbar {
+		width: 0.4rem;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+		background: #f1f1f1;
+	}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: #464646;
+		border-radius: 0.6rem;
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background: #555;
+	}
 `;
 
 export default class MyDocument extends Document {

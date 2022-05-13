@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<link rel='icon' href='/portfolio-logo.png' />
 			</Head>
 
-			<Script strategy='beforeInteractive' src='https://www.googletagmanager.com/gtag/js?id=G-PFGS0C39D7' />
+			<Script src='https://www.googletagmanager.com/gtag/js?id=G-PFGS0C39D7' />
 
 			<Script id='ga-analytics'>
 				{`

@@ -4,12 +4,14 @@ export const LayoutContainer = styled.div`
 	margin: 0;
 	padding: 0;
 	min-height: 100vh;
-	min-width: 100vw;
+	width: 100vw;
 	background-color: ${props => props.theme.palette.background.default};
 
 	main {
+		// psuje rozdzielczosc - patrz na widnows
 		min-height: 100vh;
 		overflow: hidden;
+		overflow-y: 'scroll';
 	}
 `;
 
