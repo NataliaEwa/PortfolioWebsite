@@ -5,7 +5,10 @@ export const PortfolioCardContainer = styled(Card)`
 	background-color: transparent;
 	max-width: '30rem';
 	width: calc(50% - 1rem);
-	height: 100%;
+
+	${props => props.theme.breakpoints.up('md')} {
+		height: 30rem;
+	}
 
 	${props => props.theme.breakpoints.down('md')} {
 		width: 100%;
@@ -24,10 +27,15 @@ export const PortfolioCardContainer = styled(Card)`
 	.title {
 		text-transform: uppercase;
 	}
+
+	.height {
+		height: 100%;
+	}
 `;
 
 export enum PortfolioCardClassNames {
 	ImageContainer = 'image-container',
 	Transparency = 'transparency',
-	Title = 'title'
+	Title = 'title',
+	Height = 'height'
 }

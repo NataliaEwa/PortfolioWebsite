@@ -4,7 +4,7 @@ export const AboutMeContainer = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	gap: 2rem 2rem;
 	margin: 1rem 0 1rem 0;

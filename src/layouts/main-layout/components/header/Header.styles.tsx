@@ -103,7 +103,6 @@ export const HeaderContainer = styled.header<HeaderProps>`
 		span {
 			transform: rotate(-20deg);
 			font-size: 2rem;
-			font-family: Arial, Helvetica, sans-serif;
 			letter-spacing: -8px;
 			color: white;
 		}

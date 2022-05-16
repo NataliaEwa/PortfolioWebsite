@@ -23,7 +23,7 @@ export const portfolioTheme = createTheme({
 	},
 
 	typography: {
-		fontFamily: 'Roboto'
+		//fontFamily: 'Roboto'
 	},
 
 	breakpoints: {
@@ -63,7 +63,7 @@ export const portfolioDarkTheme = createTheme({
 	},
 
 	typography: {
-		fontFamily: 'Roboto'
+		//fontFamily: 'Roboto'
 	},
 
 	breakpoints: {

@@ -34,6 +34,9 @@ export const DimmedImage = styled(Image)`
 `;
 
 export const Dimmed = styled.div`
+	height: 100%;
+	width: 100%;
+
 	${props => props.theme.breakpoints.up('md')} {
 		flex-direction: row;
 		-webkit-filter: grayscale(100%);

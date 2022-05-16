@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material';
 import { SectionTitle } from '../Content.styles';
 import Image from 'next/image';
-import aboutMe from '/public/images/aboutme.jpg';
+import aboutMe from '/public/images/aboutme3.jpg';
 import { AboutMeClassNames, AboutMeContainer } from './AboutMe.styles';
 import { portfolioTheme } from 'src/theme/ThemeProvider';
 import useWindowSize from 'src/hooks/useWindowSize';
@@ -20,7 +20,7 @@ export const AboutMe = () => {
 			<Dimmed id='about-me'>
 				<AboutMeContainer>
 					<div className={AboutMeClassNames.ImageContainer}>
-						<Image src={aboutMe} alt='aboutMe' className={AboutMeClassNames.Opacity}></Image>
+						<Image layout='intrinsic' src={aboutMe} alt='aboutMe' className={AboutMeClassNames.Opacity}></Image>
 
 						{width && width < portfolioTheme.breakpoints.values.md && (
 							<Typography variant='h4' className={AboutMeClassNames.CenteredText}>
@@ -31,8 +31,8 @@ export const AboutMe = () => {
 
 					<div className={AboutMeClassNames.Typography}>
 						<Typography marginBottom={'1rem'}>
-							Hello, my name is Natalia and I am a front developer. I build and design modern websites using React.js, next.js
-							and TypeScript.
+							Hello, my name is Natalia and I am a frontend developer. I build and design modern websites using React.js,
+							next.js and TypeScript.
 						</Typography>
 
 						<Typography>

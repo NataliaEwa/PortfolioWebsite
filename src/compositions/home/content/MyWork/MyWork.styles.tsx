@@ -7,7 +7,7 @@ export const MyWorkContainer = styled.div`
 	justify-content: space-around;
 
 	max-width: 60rem;
-	height: 100%;
+	height: auto;
 
 	gap: 2rem 2rem;
 	margin: 1rem 0 1rem 0;

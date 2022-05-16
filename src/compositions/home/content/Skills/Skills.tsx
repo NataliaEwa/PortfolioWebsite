@@ -9,7 +9,7 @@ import react from '/public/logos/react.png';
 import typescript from '/public/logos/typescript.png';
 import { Typography } from '@mui/material';
 import { SectionTitle } from '../Content.styles';
-import { SkillsClassNames, SkillsContainer, TransformSkillSize } from './Skills.styles';
+import { SkillsClassNames, SkillsContainer } from './Skills.styles';
 
 export const Skills = () => {
 	return (
@@ -19,41 +19,41 @@ export const Skills = () => {
 			</SectionTitle>
 
 			<SkillsContainer>
-				<TransformSkillSize className={SkillsClassNames.ReactLogoContainer}>
+				<div className={SkillsClassNames.ReactLogoContainer}>
 					<Image src={react} alt='react' layout='fill'></Image>
-				</TransformSkillSize>
+				</div>
 
-				<TransformSkillSize className={SkillsClassNames.NextJsLogoContainer}>
+				<div className={SkillsClassNames.NextJsLogoContainer}>
 					<Image src={next} alt='next' layout='fill'></Image>
-				</TransformSkillSize>
+				</div>
 
-				<TransformSkillSize className={SkillsClassNames.SquareImageContainer}>
-					<Image src={typescript} alt='typescript'></Image>
-				</TransformSkillSize>
+				<div className={SkillsClassNames.SquareImageContainer}>
+					<Image src={typescript} alt='typescript' layout='intrinsic'></Image>
+				</div>
 
-				<TransformSkillSize className={SkillsClassNames.SquareImageContainer}>
+				<div className={SkillsClassNames.SquareImageContainer}>
 					<Image src={materialui} alt='materialui' layout='fill'></Image>
-				</TransformSkillSize>
+				</div>
 
-				<TransformSkillSize className={SkillsClassNames.SqlServerLogoContainer}>
+				<div className={SkillsClassNames.SqlServerLogoContainer}>
 					<Image src={sql} alt='sql' layout='fill'></Image>
-				</TransformSkillSize>
+				</div>
 
-				<TransformSkillSize className={SkillsClassNames.MySqlLogoContainer}>
+				<div className={SkillsClassNames.MySqlLogoContainer}>
 					<Image src={mysql} alt='mysql' layout='fill'></Image>
-				</TransformSkillSize>
+				</div>
 
-				<TransformSkillSize className={SkillsClassNames.SquareImageContainer}>
+				<div className={SkillsClassNames.SquareImageContainer}>
 					<Image src={github} alt='github' layout='fill'></Image>
-				</TransformSkillSize>
+				</div>
 
-				<TransformSkillSize className={SkillsClassNames.PowerBiContainer}>
+				<div className={SkillsClassNames.PowerBiContainer}>
 					<div className={SkillsClassNames.SquareImageContainer}>
 						<Image src={powerbi} alt='powerbi' layout='fill'></Image>
 					</div>
 
 					<Typography variant='h4'>Power BI </Typography>
-				</TransformSkillSize>
+				</div>
 			</SkillsContainer>
 		</>
 	);

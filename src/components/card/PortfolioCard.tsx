@@ -14,9 +14,9 @@ export default function PortfolioCard({ description, title, image, link }: CardP
 	return (
 		<PortfolioCardContainer>
 			<Dimmed>
-				<CardActionArea href={link} target='_blank'>
+				<CardActionArea href={link} target='_blank' className={PortfolioCardClassNames.Height}>
 					<div className={PortfolioCardClassNames.ImageContainer}>
-						<Image src={image} alt='whatIDo'></Image>
+						<Image src={image} alt='whatIDo' layout='intrinsic'></Image>
 					</div>
 					<CardContent>
 						<Typography gutterBottom variant='h5' component='div' className={PortfolioCardClassNames.Title}>

@@ -25,7 +25,7 @@ export const WhatIDo = () => {
 					</div>
 
 					<div className={WhatIDoClassNames.ImageContainer}>
-						<Image src={whatIDo} alt='whatIDo' className={WhatIDoClassNames.Opacity}></Image>
+						<Image src={whatIDo} alt='whatIDo' className={WhatIDoClassNames.Opacity} layout='intrinsic'></Image>
 
 						{width && width < portfolioTheme.breakpoints.values.md && (
 							<Typography variant='h4' className={WhatIDoClassNames.CenteredText}>
