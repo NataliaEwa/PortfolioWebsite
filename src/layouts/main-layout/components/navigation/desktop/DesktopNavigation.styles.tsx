@@ -5,12 +5,18 @@ export const NavigationContainer = styled.header`
 		color: white;
 		margin-right: 2rem;
 	}
+
 	.resume-button {
 		background: none;
 
 		color: white;
 		box-shadow: 0 0 0.05em rgba(0, 0, 0, 0.4);
 	}
+
+	a {
+		text-decoration: none;
+	}
+
 	padding-right: 1rem;
 `;
 

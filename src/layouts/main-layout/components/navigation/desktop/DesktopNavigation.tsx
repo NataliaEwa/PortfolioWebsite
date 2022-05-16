@@ -50,9 +50,11 @@ export default function DesktopNavigation(): JSX.Element {
 				Contact
 			</BrighteningButton>
 
-			<BrighteningButton variant='outlined' className={NavigationClassNames.ResumeButton}>
-				Resume
-			</BrighteningButton>
+			<a target='_blank' href='/NATALIA KAMIENIAK CV.pdf'>
+				<BrighteningButton variant='outlined' className={NavigationClassNames.ResumeButton}>
+					Resume
+				</BrighteningButton>
+			</a>
 		</NavigationContainer>
 	);
 }
