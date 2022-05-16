@@ -5,6 +5,7 @@ export const PortfolioCardContainer = styled(Card)`
 	background-color: transparent;
 	max-width: '30rem';
 	width: calc(50% - 1rem);
+	height: 100%;
 
 	${props => props.theme.breakpoints.down('md')} {
 		width: 100%;
